@@ -1,0 +1,77 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf8" />
+<title><{$lang.admin_site_title}></title>
+<script src="statics/js/jquery.min.js"></script>
+<link href="statics/css/page.css" rel="stylesheet" type="text/css" />
+</head>
+<body id="main-body">
+
+<div class="output">
+    <form action="index.php?m=food&c=index&a=savefood&dosubmit=1" method="post" name="frm" id="frm" onSubmit="ajax_tip();">
+        <div class="main-form list">
+            <table cellspacing="0" cellpadding="0" class="form-table" id="form-table">
+    
+                <tr class="row">
+                    <td class="row-label">店铺名称</td>
+                    <td>
+                        <input name="data[cateName]" value="咏蛙田鸡（世贸店）" type="text" class="text" id="title" size="80" maxlength="30" />
+                    </td>
+                </tr>
+                <tr class="row">
+                    <td class="row-label">店铺简介</td>
+                    <td>
+                        <input name="data[description]" value="厦门咏蛙田鸡餐饮有限公司创立于2009年，是一家以经营干锅、火锅系列美食、融汇川味特色为一体的餐饮企业" type="text" class="text" id="intro" size="80" maxlength="30" />
+                    </td>
+                </tr>
+                <tr class="row">
+                    <td class="row-label">联系人姓名</td>
+                    <td>
+                        <input name="data[linkmanName]" value="张勇" type="text" class="text" id="intro" size="80" maxlength="30" />
+                    </td>
+                </tr>
+                <tr class="row">
+                    <td class="row-label">联系人电话</td>
+                    <td>
+                        <input name="data[linkmanPhone]" value="15306093806" type="text" class="text" id="intro" size="80" maxlength="30" />
+                    </td>
+                </tr>
+                <tr class="row">
+                    <td class="row-label">最低起送价格</td>
+                    <td>
+                        <input name="data[minDeliverPrice]" value="34" type="text" class="text" id="intro" size="80" maxlength="30" />
+                    </td>
+                </tr>
+                <tr class="row">
+                    <td class="row-label">商家优惠信息</td>
+                    <td>
+                        <input name="data[news]" value="仅售67元！价值100元的代金券1张，全场通用，可叠加使用，提供免费WiFi。可打包，可外送，咏蛙全新菜单，菜金更亲民。上美团，大锅田鸡仅需58元，点了一锅又一锅，土豪就是这么任性。" type="text" class="text" id="intro" size="80" maxlength="30" />
+                    </td>
+                </tr>
+                <tr class="row">
+                    <td class="row-label">店铺坐标</td>
+                    <td>
+                        <input name="data[cLocation]" value="118.174576,24.478384" type="text" class="text" id="intro" size="80" maxlength="30" />
+                    </td>
+                </tr>
+                <tr class="row">
+                    <td class="row-label">店铺地址</td>
+                    <td>
+                        <input name="data[cAddress]" value="思明区东百购物中心3楼" type="text" class="text" id="intro" size="80" maxlength="30" />
+                    </td>
+                </tr>
+
+                <tr class="row">
+                    <td class="row-label">&nbsp;</td>
+                    <td>
+                        <input type="submit" name="btn" id="submit" value=" 保存信息 " class="button" />
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+    </form>
+</div>
+</div>
+</body>
+</html>

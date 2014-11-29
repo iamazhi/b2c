@@ -1,0 +1,60 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf8" />
+<title><{$lang.admin_site_title}></title>
+<script src="statics/js/jquery.min.js"></script>
+<link href="statics/css/page.css" rel="stylesheet" type="text/css" />
+</head>
+<body id="main-body">
+
+<div class="output">
+    <form action="index.php?m=tuan&c=index&a=savetuan&dosubmit=1" method="post" name="frm" id="frm" onSubmit="ajax_tip();">
+        <div class="main-form list">
+            <table cellspacing="0" cellpadding="0" class="form-table" id="form-table">
+    
+                <tr class="row">
+                    <td class="row-label">标题</td>
+                    <td>
+                        <input name="data[title]" value="大歌星量贩KTV" type="text" class="text" id="title" size="80" maxlength="30" />
+                    </td>
+                </tr>
+                <tr class="row">
+                    <td class="row-label">简介</td>
+                    <td>
+                        <input name="data[intro]" value="大家爱K歌！仅售19.90元，最高价值1043元的大歌星量贩KTV周日至周四23:00-次日06:00包段7小时/周一至周五11:00-18:00任选2小时欢唱套餐2选1，可升级，大包厢/中包厢/小包厢可用，适合1-8人。" type="text" class="text" id="intro" size="80" maxlength="30" />
+                    </td>
+                </tr>
+                <tr class="row">
+                    <td class="row-label">原价</td>
+                    <td>
+                        <input name="data[price]" value="1043" type="text" class="text" id="type" size="80" maxlength="5" />
+                    </td>
+                </tr>
+
+                 <tr class="row">
+                    <td class="row-label">组团价</td>
+                    <td>
+                        <input name="data[specialPrice]" value="19.9" type="text" class="text" id="type" size="80" maxlength="5" />
+                    </td>
+                </tr>
+
+                 <tr class="row">
+                    <td class="row-label">分类</td>
+                    <td>
+                        <input name="data[categoryId]" value="2" type="text" class="text" id="type" size="80" maxlength="5" />
+                    </td>
+                </tr>
+              
+                <tr class="row">
+                    <td class="row-label">&nbsp;</td>
+                    <td>
+                        <input type="submit" name="btn" id="submit" value=" 保存信息 " class="button" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</div>
+</div>
+</body>
+</html>
